@@ -107,6 +107,7 @@ function App() {
 
 function AppWithUnmountCheckbox() {
   const [mountApp, setMountApp] = React.useState(true)
+
   return (
     <div>
       <label>
@@ -114,7 +115,7 @@ function AppWithUnmountCheckbox() {
           type="checkbox"
           checked={mountApp}
           onChange={e => setMountApp(e.target.checked)}
-        />{' '}
+        />
         Mount Component
       </label>
       <hr />
